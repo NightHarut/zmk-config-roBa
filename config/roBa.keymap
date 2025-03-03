@@ -80,8 +80,8 @@
             bindings = <
 &kp ESCAPE       &kp AT             &trans    &trans      &trans                                  &kp F1        &kp F2                &kp NON_US_BACKSLASH   &kp PIPE   &kp AT
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT  &trans      &kp AMPERSAND  &kp SQT       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp CARET
-&trans           &trans             &trans    &trans      &trans       &trans      &kp SLASH      &kp QUESTION  &kp BACKSLASH         &kp UNDERSCORE         &kp EQUAL  &kp TILDE
-&trans           &trans             &trans    &trans      &trans       &trans      &trans         &trans                                                                &kp END
+&kp LEFT_SHIFT   &trans             &trans    &trans      &trans       &trans      &kp SLASH      &kp QUESTION  &kp BACKSLASH         &kp UNDERSCORE         &kp EQUAL  &mt RIGHT_SHIFT TILDE
+&trans           &trans             &trans    &trans      &trans       &trans      &trans         &kp DEL                                                               &kp END
             >;
         };
 
