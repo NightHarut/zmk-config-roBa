@@ -78,7 +78,7 @@
 
         FUNCTION {
             bindings = <
-&trans           &trans             &trans    &trans      &trans                                  &kp F1        &kp F2                &kp NON_US_BACKSLASH   &kp PIPE   &kp AT
+&kp ESCAPE       &kp AT             &trans    &trans      &trans                                  &kp F1        &kp F2                &kp NON_US_BACKSLASH   &kp PIPE   &kp AT
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT  &trans      &kp AMPERSAND  &kp SQT       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp CARET
 &trans           &trans             &trans    &trans      &trans       &trans      &kp SLASH      &kp QUESTION  &kp BACKSLASH         &kp UNDERSCORE         &kp EQUAL  &kp TILDE
 &trans           &trans             &trans    &trans      &trans       &trans      &trans         &trans                                                                &kp END
@@ -96,13 +96,13 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp F1          &kp F2                  &kp F3          &kp F4                   &kp F5                            &kp N7        &kp N8        &kp N9        &kp ASTRK  &kp DELETE
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &kp C_PP      &kp MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS   &kp EQUAL
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans        &trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &kp RIGHT_SHIFT
+&trans          &trans                  &trans          &trans                   &trans   &trans        &kp N0     &kp PERIOD                                           &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_kp LC(C_NEXT) LC(C_PREV)>;
         };
 
         MOUSE {
